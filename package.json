@@ -1,0 +1,31 @@
+{
+  "name": "ikhtiar-lulus-twkh-tkhi",
+  "version": "1.0.0",
+  "description": "Aplikasi pembelajaran dan latihan TWKH TKHI",
+  "main": "server.js",
+  "scripts": {
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "nodemon server.js",
+    "client": "cd client && npm start",
+    "build": "cd client && npm run build",
+    "start": "node server.js"
+  },
+  "keywords": ["TWKH", "TKHI", "pembelajaran", "latihan"],
+  "author": "keshaji",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2",
+    "cors": "^2.8.5",
+    "mongoose": "^7.5.0",
+    "bcryptjs": "^2.4.3",
+    "jsonwebtoken": "^9.0.2",
+    "dotenv": "^16.3.1",
+    "multer": "^1.4.5-lts.1",
+    "axios": "^1.5.0",
+    "express-validator": "^7.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1",
+    "concurrently": "^8.2.1"
+  }
+}
